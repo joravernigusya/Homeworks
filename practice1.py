@@ -26,15 +26,15 @@ print(updated_url_string)
 first_str = "sing"
 second_str = "ing"
 
-# 1 вариант
+#   1 вариант
 
 print(f"I like {first_str}{second_str}")
 
-# 2 вариант
+#   2 вариант
 
 print("I like {word1}{word2}".format(word1=first_str, word2=second_str))
 
-# 3 вариант
+#   3 вариант
 
 print("I like " + first_str + second_str)
 
@@ -46,7 +46,7 @@ print(updated_name)
 
 # 5 Напишите программу которая удаляет пробел в начале, в конце строки
 
-# 1 вариант
+#   1 вариант
 
 str1 = " Cъешь ещё этих мягких французских булок, да выпей чаю "
 list_str1 = list(str1)
@@ -54,7 +54,7 @@ list_str1[0] = ""
 list_str1[-1] = ""
 print("".join(list_str1))
 
-# 2 вариант
+#   2 вариант
 
 str1 = " Cъешь ещё этих мягких французских булок, да выпей чаю "
 fixed_str1 = " ".join(str1.split())

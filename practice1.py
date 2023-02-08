@@ -43,7 +43,7 @@ list_str1[0] = ""
 list_str1[-1] = ""
 print("".join(list_str1))
 
-str2 = " Cъешь ещё этих мягких французских булок, да выпей чаю "
+str2 = " Выпей ещё этот мягкий французский эль, да съешь круассан "
 fixed_str2 = " ".join(str2.split())
 print(fixed_str2)
 

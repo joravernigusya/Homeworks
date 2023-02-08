@@ -43,9 +43,9 @@ list_str1[0] = ""
 list_str1[-1] = ""
 print("".join(list_str1))
 
-str1 = " Cъешь ещё этих мягких французских булок, да выпей чаю "
-fixed_str1 = " ".join(str1.split())
-print(fixed_str1)
+str2 = " Cъешь ещё этих мягких французских булок, да выпей чаю "
+fixed_str2 = " ".join(str2.split())
+print(fixed_str2)
 
 """ 6. Создайте словарь, связав его с переменной school, и наполните его 
 данными, которые бы отражали количество учащихся в десяти разных классах
@@ -56,6 +56,7 @@ school = {'1a': 18, '2б': 30, '3в': 21, '4г': 25, '5д': 19, '6у': 27, '7ж'
 
 # 7. Создайте список и извлеките из него списка второй элемент.
 num_list = [1, 2, 3, 4, 5, 6, 7]
+print(num_list.pop(1))
 print(num_list[1])  # - второй с начала
 print(num_list[-2])  # - второй с конца
 
@@ -90,6 +91,5 @@ print(x)
 ivan_age = 40
 lisa_age = 29
 vera_age = 20
-sum_of_ages = ivan_age + lisa_age + vera_age
-print(sum_of_ages)
-print(int(sum_of_ages / 3))
+print(ivan_age + lisa_age + vera_age)
+print(int((ivan_age + lisa_age + vera_age) / 3))

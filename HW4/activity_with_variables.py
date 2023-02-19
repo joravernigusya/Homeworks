@@ -10,12 +10,12 @@
 # При формировании нового значения используйте операции конкатенации (+)
 # и повторения строки (*).
 # 6. Выведите значения всех переменных.
-var_int = 10
-var_float = 8.4
-var_str = "No"
-big_int = int(3.5 * var_int)
-var_float -= 1
-var_int / var_float
-big_int / var_float
-var_str = var_str * 2 + "Yes" * 3
-print(var_int, var_float, var_str, big_int, sep="\n")
+
+
+def activity_with_var(var_int, var_float, var_str):
+    big_int = int(3.5 * var_int)
+    var_float -= 1
+    var_int / var_float
+    big_int / var_float
+    var_str = var_str * 2 + "Yes" * 3
+    print(var_int, var_float, var_str, big_int, sep="\n")

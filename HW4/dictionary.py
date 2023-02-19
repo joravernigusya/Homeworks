@@ -8,24 +8,13 @@
 ◦ в школе расформировали один из классов.
 4. Выведите содержимое словаря на экран.
 """
-school = {
-    "1a": 18,
-    "2б": 30,
-    "3в": 21,
-    "4г": 25,
-    "5д": 19,
-    "6у": 27,
-    "7ж": 30,
-    "8з": 22,
-    "9и": 24,
-    "10к": 26,
-}
-print(school.get("5д"))
-school["1a"] = 19
-school["2б"] = 29
-school["3в"] = 25
-school["11л"] = 15
-school["12м"] = 42
-school["13н"] = 56
-del school["4г"]
-print(school)
+
+
+def school_changes(name, **kwargs):
+    kwargs["f6"] = 25
+    kwargs["g7"] = 24
+    kwargs["h8"] = 28
+    kwargs["k11"] = 55
+    kwargs["l12"] = 60
+    del kwargs["a1"]
+    print(f"В классе с3 {kwargs.get('c3')} учеников\n" f"{name}{kwargs}")

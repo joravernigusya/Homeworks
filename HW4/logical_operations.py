@@ -5,20 +5,18 @@
 4. Попробуйте использовать в сложных логических выражениях
 работу с переменными строкового типа.
 """
-a = 10
-b = 20
-print(a < b and b >= 15)
-print(a == 10 and b != 100)
-print(a > b and b < a)
-print(a == b and b <= 0)
-print(a < b or b <= 15)
-print(a == 10 or b == 100)
-print(a == 20 or b != 20)
-print(a < 10 or b > 20)
 
-str1 = "string1"
-str2 = "string22"
-print(str1 != str2 and str1 < str2)
-print(str1 < str2 and str2 == str1)
-print(str1 > str2 or str2 != str1)
-print(str1 == 0 or str2 == 0)
+
+def logical_operation(a, b, str1, str2):
+    print(a < b and b >= 15)
+    print(a == 10 and b != 100)
+    print(a > b and b < a)
+    print(a == b and b <= 0)
+    print(a < b or b <= 15)
+    print(a == 10 or b == 100)
+    print(a == 20 or b != 20)
+    print(a < 10 or b > 20)
+    print(str1 != str2 and str1 < str2)
+    print(str1 < str2 and str2 == str1)
+    print(str1 > str2 or str2 != str1)
+    print(str1 == 0 or str2 == 0)

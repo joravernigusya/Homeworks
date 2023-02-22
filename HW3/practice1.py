@@ -1,12 +1,11 @@
 # 1. Привести к целому типу -1.6, 2.99.
 def convert_to_int(a, b):
-    print(int(a), int(b))
+    return int(a), int(b)
 
 
 # 2. Заменить символ “#” на символ “/” в строке 'www.my_site.com#about'.
 def replace_char(string_with_char):
-    result = string_with_char.replace("#", "/")
-    print(result)
+    return string_with_char.replace("#", "/")
 
 
 # 3. Напишите программу, которая добавляет ‘ing’ к слову ‘stroka’.
@@ -48,8 +47,7 @@ def str1_in_str2(string1, string2):
 # print(x[?]) #y
 # print(x[?:?:?]) #nesgt
 def print_char(string):
-    print(string[1])
-    print(string[3:16:3])
+    return string[1], string[3:16:3]
 
 
 # Задание 1.3 лекции.

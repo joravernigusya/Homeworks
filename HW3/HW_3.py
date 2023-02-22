@@ -14,9 +14,9 @@ from HW3 import (
 
 update_name("yan lu")
 
-convert_to_int(3.2, 11)
+print(convert_to_int(3.2, 11))
 
-replace_char("www.my_site.com#about")
+print(replace_char("www.my_site.com#about"))
 
 gerund("sing")
 
@@ -30,7 +30,7 @@ pop_num_list([1, 2, 3, 4, 5, 6, 7])
 
 str1_in_str2("employ", "employment")
 
-print_char("My name is Agent Smith")
+print(print_char("My name is Agent Smith"))
 
 calculation1()
 

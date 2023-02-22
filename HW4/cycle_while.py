@@ -24,15 +24,14 @@ def field_years(s1, s2):
 # 3. Дано целое число N (>0). Используя операции деления нацело и взятия
 # остатка от деления, найти количество и сумму его цифр.
 def count_sum_num(num):
-    sum = 0
     count = 0
-    if num == 0:
-        return print("Число должно быть больше 0")
+    sum = 0
     while num > 0:
-        sum += num % 10
-        num //= 10
+        digit = num % 10
         count += 1
-    print(f"Сумма цифр = {sum}\nКоличество цифр = {count}")
+        sum += digit
+        num //= 10
+    return count, sum
 
 
 # 4. Деду M лет, а внуку N лет. Через сколько лет дед станет вдвое старше

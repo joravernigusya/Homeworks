@@ -9,6 +9,5 @@ from HW3.practice1 import (
     str1_in_str2,
     print_char,
     calculation1,
-    calculation_ages
+    calculation_ages,
 )
-

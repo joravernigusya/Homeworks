@@ -10,11 +10,33 @@
 """
 
 
-def school_changes(name, **kwargs):
-    kwargs["f6"] = 25
-    kwargs["g7"] = 24
-    kwargs["h8"] = 28
-    kwargs["k11"] = 55
-    kwargs["l12"] = 60
-    del kwargs["a1"]
-    print(f"В классе с3 {kwargs.get('c3')} учеников\n" f"{name}{kwargs}")
+def school_changes():
+    school = {
+        "1a": 20,
+        "2b": 22,
+        "3c": 18,
+        "4d": 24,
+        "5e": 16,
+        "6f": 20,
+        "7g": 25,
+        "8h": 21,
+        "9i": 19,
+        "10j": 23,
+    }
+
+    # Выводим количество учеников в классе 3d
+    print("Количество учеников в классе 10j:", school["10j"])
+
+    # Изменяем количество учащихся в трех классах
+    school["1a"] = 18
+    school["5e"] = 22
+    school["9i"] = 21
+
+    # Добавляем два новых класса и удаляем один класс
+    school["11k"] = 17
+    school["12l"] = 19
+    del school["7g"]
+
+    # Выводим содержимое словаря
+    for k, v in school.items():
+        print(k, ":", v)

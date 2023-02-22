@@ -1,1 +1,0 @@
-print("homework by Yan")

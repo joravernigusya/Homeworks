@@ -9,20 +9,18 @@ print(positive_numbers1)
 
 
 def positive_numbers2(list_numbers):
-    pos_nums = []
     for num in list_numbers:
         try:
             if num > 0:
-                pos_nums.append(num)
+                yield num
         except TypeError:
             print(
                 f"Входные данные содержат нечисловые значения. "
                 f"Будут выведены только числовые значения."
             )
-    return pos_nums
 
 
-print(positive_numbers2([34.6, -203.4, 44.9, 68.3, -12.2, 44.6, "dfdf"]))
+print(list(positive_numbers2([34.6, -203.4, 44.9, 68.3, -12.2, 44.6, "df"])))
 
 # 2 Необходимо составить список чисел которые
 # указывают на длину слов в строке: sentence = " thequick
@@ -43,3 +41,15 @@ for i in words:
         except:
             pass
 print(len_sentence2)
+
+
+def len_sentence3(sentence):
+    for word in sentence.split(" "):
+        try:
+            if word != "the":
+                yield len(word)
+        except:
+            pass
+
+
+print(list(len_sentence3("thequick brown fox jumps over the lazy dog")))

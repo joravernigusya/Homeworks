@@ -26,15 +26,9 @@ def factorial_recursion(n):
 
 n = 10
 
-print(
-    f"Время выполнения простой функции факториала: ",
-    timeit.timeit(lambda: factorial(n), number=100000),
-)
-print(
-    "Время выполнения генератора факториала: ",
-    timeit.timeit(lambda: list(factorial_generator(n)), number=100000),
-)
-print(
-    "Время выполнения рекурсии факториала: ",
-    timeit.timeit(lambda: factorial_recursion(n), number=100000),
-)
+print(f"Время выполнения простой функции факториала: ",
+      timeit.timeit(lambda: factorial(n), number=100000))
+print("Время выполнения генератора факториала: ",
+      timeit.timeit(lambda: list(factorial_generator(n)), number=100000))
+print("Время выполнения рекурсии факториала: ",
+      timeit.timeit(lambda: factorial_recursion(n), number=100000))

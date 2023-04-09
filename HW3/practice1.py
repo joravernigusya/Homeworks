@@ -29,7 +29,7 @@ def update_name(name):
 # 5) Проверить, что функция правильно обрабатывает строки с одним пробелом
 # или без пробелов.
 def strip_string(string):
-    print(string.strip())
+    return string.strip()
 
 
 # 6. Создайте словарь, связав его с переменной school, и наполните его

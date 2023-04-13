@@ -13,7 +13,7 @@ from HW4.cycle_for import (
     best_swimmer,
     list_uniq_num,
 )
-from HW4.cycle_while import mult_num, field_years, count_sum_num, gf_gs_ages
+from HW4.cycle_while import mult_nums, field_years, count_sum_num, gf_gs_ages
 from HW4.dictionary import school_changes
 from HW4.lists import two_lists, common_elements, uniq_elem_list
 from HW4.logical_operations import logical_operation

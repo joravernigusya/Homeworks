@@ -10,7 +10,7 @@ from HW4 import (
     mult_sum_count_num,
     best_swimmer,
     list_uniq_num,
-    mult_num,
+    mult_nums,
     field_years,
     count_sum_num,
     gf_gs_ages,
@@ -63,9 +63,9 @@ print(
 
 print(list_uniq_num(1, 5, 2, 9, 2, 9, 1))
 
-print(mult_num(5))
+print(mult_nums(5))
 
-print(field_years(2, 3))
+print(field_years(10, 11))
 
 print(count_sum_num(12345))
 

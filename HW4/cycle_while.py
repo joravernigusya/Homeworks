@@ -17,12 +17,14 @@
 # удовлетворяет этому условию, должно вызываться исключение ValueError.
 
 
-def mult_num(num):
-    i = 1
+def mult_nums(num: int) -> int:
+    if not isinstance(num, int) or num < 0:
+        raise TypeError("N должно быть положительным целым числом")
+    if num == 0:
+        return 0
     result = 1
-    while i <= 5:
+    for i in range(1, num + 1):
         result *= i
-        i += 1
     return result
 
 
@@ -37,14 +39,25 @@ def mult_num(num):
 # когда площадь первого сорта станет меньше 10% от площади второго сорта.
 # 3) Проверить, что функция работает корректно на разных входных данных,
 # включая большие значения площадей и большое количество лет.
+# 4) Проверить, что вводимым значением может быть только положительное число
+# > 0
+# 5) Проверить, что вводимые значения могут быть дробным.
 
 
 def field_years(s1, s2):
+    if not isinstance(s1, (int, float)) or not isinstance(s2, (int, float)):
+        raise ValueError("Площади должны быть числами")
+    if s1 <= 0 or s2 <= 0:
+        raise ValueError("Площади должны быть положительными числами")
+    if s1 >= s2:
+        raise ValueError("Площада первых цветов должна быть меньше площади вторых")
+
     year = 0
-    while s1 >= s2 * 0.1:
+    while s1 > s2 * 0.1:
         s1 *= 2
         s2 *= 3
         year += 1
+
     return year
 
 

@@ -41,10 +41,7 @@ def test_non_numeric_values(s1, s2):
 
 @pytest.mark.parametrize(
     "s1, s2",
-    [
-        (10, 1),
-        (100, 30)
-    ],
+    [(10, 1), (100, 30)],
 )
 def test_s1_greater_than_s2(s1, s2):
     with pytest.raises(ValueError):

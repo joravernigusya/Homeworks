@@ -19,22 +19,12 @@ def test_correct_values(s1, s2, expected_years):
         (-1, 10),
         (1, -10),
         (-1, -10),
+        ("1", 10),
+        (1, "10"),
+        ("1", "10")
     ],
 )
 def test_negative_values(s1, s2):
-    with pytest.raises(ValueError):
-        field_years(s1, s2)
-
-
-@pytest.mark.parametrize(
-    "s1, s2",
-    [
-        ("1", 10),
-        (1, "10"),
-        ("1", "10"),
-    ],
-)
-def test_non_numeric_values(s1, s2):
     with pytest.raises(ValueError):
         field_years(s1, s2)
 

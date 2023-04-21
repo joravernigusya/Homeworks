@@ -29,6 +29,8 @@ def update_name(name):
 # 5) Проверить, что функция правильно обрабатывает строки с одним пробелом
 # или без пробелов.
 def strip_string(string):
+    if isinstance(string, (int, float)):
+        raise ValueError("Input must be a string")
     return string.strip()
 
 

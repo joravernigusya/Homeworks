@@ -19,8 +19,7 @@ class Flower:
             return 0
 
     def __str__(self):
-        return f"{self.name} ({self.color}, {self.length} см., " \
-               f"{self.price} руб.)"
+        return f"{self.name} ({self.color}, {self.length} см., " f"{self.price} руб.)"
 
 
 class Accessory:
